@@ -15,6 +15,6 @@ do
           sleep $3
   fi
   done
-  find ./ -maxdepth 1 -type f -name "*.txt" -amin +$4 -delete
+  find ./ -maxdepth 1 -type f -name "thread_*.txt" -amin +$4 -delete
   # find ./ -type f -regex '.*-\d{8}\.txt' -amin +$4 -delete
 done
